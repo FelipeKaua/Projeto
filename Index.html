@@ -24,30 +24,36 @@
         <div class="textinput">
             <input class="input" type="text" placeholder="Adicionar Tarefa...">
         </div>
-        <img class="plus" src="assets/plus.png">
+        <img class="plus" src="assets/plus.png" onclick="addTask()">
     </section>
     <!-- kanban -->
     <section class="bottomside">
         <div class="estado">
             <h3 class="estadoText">Todo</h3>
             <div class="linha"></div>
-            <article>
+            <div class="box">
+                <article class="todo">
 
-            </article>
+                </article>
+            </div>
         </div>
         <div class="estado">
             <h3 class="estadoText">Doing</h3>
             <div class="linha"></div>
-            <article>
+            <div class="box">
+                <article class="doing">
                 
-            </article>
+                </article>
+            </div>
         </div>
         <div class="estado">
             <h3 class="estadoText">Done</h3>
             <div class="linha"></div>
-            <article>
+            <div class="box">
+                <article class="done">
                 
-            </article>
+                </article>
+            </div>
         </div>
     </section>
     <!-- modal -->
@@ -70,6 +76,6 @@
     <!-- scripts -->
     <script src="scripts/cookie.js"></script>
     <script src="scripts/modal.js"></script>
-    <script src="scripts/kanban.js"></script>
+    <script src="scripts/kanban.js" defer></script>
 </body>
 </html>

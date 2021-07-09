@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
+<div class="background">
     <!-- header(logo,nome,config) -->
     <header class="topside">
             <img class="logo" src="assets/BlueLogo 1.png">
@@ -55,9 +56,17 @@
             <h4 class="textoModal">Configuração</h4>
             <div class="linha"></div>
             <h5 class="textoModalSub">Dark Mode</h5>
-            <h5 class="textoModalSub">Plano de fundo</h5>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            <h5 class="textoModalSub2">Plano de fundo</h5>
+            <input type="text" class="url" placeholder="Insira a url aqui...">
+            <h5 class="limpar" onClick="removerBackground()">Limpar</h5>
+            <h5 class="aplicar" onClick="aplicarBackground()">Aplicar</h5>
         </div>
     </section>
+</div>
     <!-- scripts -->
     <script src="scripts/cookie.js"></script>
     <script src="scripts/modal.js"></script>

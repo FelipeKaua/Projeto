@@ -8,6 +8,7 @@
     font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
 }
 .background{
+    background-color: white;
     position: absolute;
     top: 0; 
     left: 0; 
@@ -17,6 +18,9 @@
     background-size: 100% 100%;
     object-fit: contain;
     background-image: none;
+}
+.darkBackground{
+    background-color: #232323;
 }
 .topside{
     margin-top: 2.5%;
@@ -62,8 +66,11 @@
     border-radius: 13px;
     display: block;
     padding-left: 1vh;
-    width: 99%;
+    width: 98.5%;
     height: 101%;
+}
+.darkInput{
+    background-color: #484E54;
 }
 .plus{
     margin-left:1%;
@@ -88,11 +95,19 @@
     width: 30%;
     margin-bottom: 2%;
 }
-.estado h3{
+.darkEstado{
+    background-color: #484E54;
+    border: 1.5px solid #484E54;
+    box-shadow: 1px 3px black;
+}
+.estadoText{
     margin:auto;
     margin-top: 5%;
     text-align: center;
     font-size: 5vh;
+}
+.darkEstadoText{
+    color: white;
 }
 .linhaheader{
     display: flex;
@@ -131,11 +146,17 @@
     border-radius: 25px;
     background-color: white;
 }
+.darkModalContent{
+    background-color: #484E54;
+}
 .textoModal{
     user-select: none;
     text-align: center !important;
     font-size: 5vh;
     padding-top: 20px;
+}
+.darkTextoModal{
+    color: white;
 }
 .textoModalSub{
     display: inline-block;
@@ -145,6 +166,9 @@
     padding-top: 40px;
     padding-left: 7vh;
 }
+.darkTextoModalSub{
+    color: white;
+}
 .textoModalSub2{
     display: block;
     justify-content: space-between;
@@ -152,6 +176,9 @@
     font-size: 3vh;
     padding-top: 40px;
     padding-left: 7vh;
+}
+.darkTextoModalSub2{
+    color: white;
 }
 .url{
     display: block;
@@ -163,6 +190,10 @@
     border: 1px solid black;
     border-radius: 15px;
     background-color: transparent;
+}
+.darkUrl{
+    border: 1px solid white;
+    background-color: white;
 }
 .limpar{
     display: inline-block;
@@ -185,6 +216,17 @@
     margin-left: 7vh;
     padding: 0.5vh;
 }
+.darkLimpar{
+    border: 1px solid #b9b9b9;
+    background-color: #b9b9b9;
+    color: black;
+}
+.darkLimpar:hover{
+    cursor: pointer;
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+}
 .aplicar{
     display: inline-block;
     border: 1px solid black;
@@ -205,6 +247,17 @@
     margin-top: 2vh;
     margin-left: 7vh;
     padding: 0.5vh;
+}
+.darkAplicar{
+    border: 1px solid #b9b9b9;
+    background-color: #b9b9b9;
+    color: black;
+}
+.darkAplicar:hover{
+    cursor: pointer;
+    border: 1px solid #3071D9;
+    background-color: #3071D9;
+    color: white;
 }
 
 /* botão toggle */
@@ -258,7 +311,9 @@
   }
 
 
-
+::placeholder{
+    color: #B9B9B9;
+}
 @media (max-width: 600px){
     .bottomside{
         display: inline-block;

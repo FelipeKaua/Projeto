@@ -27,6 +27,9 @@
     font-size: 10vh;
     user-select: none;
 }
+.engrenagem{
+    cursor: pointer;
+}
 .midside{
     margin: auto;
     margin-top: 2%;
@@ -95,7 +98,7 @@
     height: 1px;
 }
 .modal{
-    display: block;
+    display: none;
     position: fixed;
     top: 0;
     left: 0;

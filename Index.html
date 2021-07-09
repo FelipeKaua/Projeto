@@ -15,7 +15,7 @@
     <header class="topside">
             <img class="logo" src="assets/BlueLogo 1.png">
             <h1 class="title"><bold>uTask </bold><em>2.0</em></h1>
-            <img src="assets/Engrenagem.png">
+            <img class="engrenagem "src="assets/Engrenagem.png" onClick="abrirModal()">
     </header>
     <div class="linhaheader"></div>
     <!-- input de texto -->
@@ -23,7 +23,7 @@
         <div class="textinput">
             <input class="input" type="text" placeholder="Adicionar Tarefa...">
         </div>
-        <img class="plus" src="assets/plus-square-solid 1.png">
+        <img class="plus" src="assets/plus.png">
     </section>
     <!-- kanban -->
     <section class="bottomside">
@@ -50,7 +50,7 @@
         </div>
     </section>
     <!-- modal -->
-    <section class="modal">
+    <section class="modal" onClick="fecharModal()">
         <div class="modalContent">
             <h4 class="textoModal">Configuração</h4>
             <div class="linha"></div>
@@ -58,5 +58,9 @@
             <h5 class="textoModalSub">Plano de fundo</h5>
         </div>
     </section>
+    <!-- scripts -->
+    <script src="scripts/cookie.js"></script>
+    <script src="scripts/modal.js"></script>
+    <script src="scripts/kanban.js"></script>
 </body>
 </html>

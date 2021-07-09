@@ -21,14 +21,17 @@ function removerBackground(){
     back.style.backgroundImage = "none";
     url.value = "";
 }
+
+var darkmode;
+
 function toggleVerify(){
     const darkToggle = document.getElementsByClassName("checkbox")[0]
     if(darkToggle.checked == true){
-       
+        darkmode = true;
         dark();
     }
     else if(darkToggle.checked == false){
-     
+        darkmode = false;
         dark();
     }
 }

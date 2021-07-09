@@ -1,0 +1,136 @@
+*, html, body{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+}
+.topside{
+    margin-top: 2.5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    width: auto;
+    height: 10vh;
+}
+.title{
+    display: inline-block;
+    vertical-align:middle;
+    display:table-cell;
+    color: #0C58D3;
+    font-size: 10vh;
+    user-select: none;
+}
+.midside{
+    margin: auto;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textinput{
+    height: 35px;
+    width: 60vh;
+    margin-left: 4%;
+    border: 1.5px solid #B9B9B9;
+    border-radius: 15px;
+    box-shadow: 1px 3px gray;
+    box-shadow: 2px;
+}
+.input{
+    background-color: white;
+    border-radius: 15px;
+    display: block;
+    margin-left: 1%;
+    width: 99%;
+    height: 100%;
+}
+.plus{
+    margin-left:1%;
+    height: fit-content;
+    width: min-content;
+}
+.bottomside{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 2.5%;
+    width: 130vh;
+    height: 40vh;
+}
+.estado{
+    border: 1.5px solid #B9B9B9;
+    border-radius: 25px;
+    box-shadow: 1px 3px gray;
+    height: 100%;
+    width: 30%;
+    margin-bottom: 2%;
+}
+.estado h3{
+    margin:auto;
+    margin-top: 5%;
+    text-align: center;
+    font-size: 5vh;
+}
+.linhaheader{
+    display: flex;
+    margin: auto;
+    background-color: #0C58D3;
+    width: 15%;
+    height: 1px;
+}
+.linha{
+    display: flex;
+    margin: auto;
+    margin-top: 2%;
+    background-color: #b9b9b9;
+    width: 81%;
+    height: 1px;
+}
+.modal{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.modalContent{
+    margin: auto;
+    margin-top: 25vh;
+    width: 75vh;
+    height: 50vh;
+    border-radius: 25px;
+    background-color: white;
+}
+.textoModal{
+    text-align: center;
+    font-size: 5vh;
+    padding-top: 20px;
+}
+.textoModalSub{
+    text-align: left;
+    font-size: 3vh;
+    padding-top: 40px;
+    padding-left: 20px;
+}
+
+
+
+
+
+@media (max-width: 600px){
+    .bottomside{
+        display: inline-block;
+        margin-left: 30%;
+        };
+}

@@ -8,11 +8,6 @@ function salvar(){
 
     document.cookie = `darkmode=${darkmode}; expires=${data.toUTCString()}`
 
-    let todo = document.getElementsByClassName("todo")[0]
-    document.cookie = `todo=${todo}; expires=${data.toUTCString()}`
-    console.log(todo)
-
-    refresh();
 }
 
 function refresh(){
@@ -38,13 +33,7 @@ function refresh(){
     }
     }catch{}
     // tasks
-    try{
-        localCookie=document.cookie
-        .split("; ")
-        .find(data => data.startsWith("todo="))
-        .split("=")[1]
-        console.log(localCookie)
-        }catch{}
+
 }
 
 window.onload = refresh;

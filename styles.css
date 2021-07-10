@@ -151,6 +151,12 @@
     padding-right: 9.5%;
     height: fit-content;
 }
+.task .buttonBox{
+    visibility: hidden;
+}
+.task:hover .buttonBox{
+    visibility: visible;
+}
 .taskText{
     user-select: none;
     display: inline-block;

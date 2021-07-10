@@ -425,6 +425,9 @@ p{
 textarea:focus, input:focus {
     color: #b9b9b9;
 }
+input, select, textarea{
+    color: #b9b9b9;
+}
 @media (max-width: 600px){
     .bottomside{
         display: inline-block;

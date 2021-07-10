@@ -1,2 +1,2 @@
 # Projeto
-tem commit com erro de portugues ai kkkkkkkkkk
+->Problema com o manuseio de cookies e localstorage

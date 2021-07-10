@@ -7,20 +7,10 @@ function salvar(){
     document.cookie = `background=${url.value}; expires=${data.toUTCString()}`
 
     document.cookie = `darkmode=${darkmode}; expires=${data.toUTCString()}`
-
 }
 
 function refresh(){
     let localCookie
-    // background 
-    try{
-    localCookie=document.cookie
-    .split("; ")
-    .find(data => data.startsWith("background="))
-    .split("=")[1]
-    let background = document.getElementsByClassName("background")[0]
-    background.style.backgroundImage = "url(" + localCookie + ")";
-    }catch{}
     // darkmode 
     try{
     localCookie=document.cookie
@@ -30,10 +20,16 @@ function refresh(){
     if(localCookie=="true"){
         let toggle = document.getElementsByClassName("checkbox")[0]
         toggle.click();
-    }
-    }catch{}
-    // tasks
-
+    }}catch{}
+    // background 
+    try{
+        localCookie=document.cookie
+        .split("; ")
+        .find(data => data.startsWith("background="))
+        .split("=")[1]
+        let background = document.getElementsByClassName("background")[0]
+        background.style.backgroundImage = "url(" + localCookie + ")";
+        }catch{}
 }
 
 window.onload = refresh;

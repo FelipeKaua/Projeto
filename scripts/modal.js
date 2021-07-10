@@ -48,6 +48,11 @@ function dark(){
     const url = document.getElementsByClassName("url")[0]
     const limpar = document.getElementsByClassName("limpar")[0]
     const aplicar = document.getElementsByClassName("aplicar")[0]
+    const plus = document.getElementsByClassName("plus")[0]
+    const logo = document.getElementsByClassName("logo")[0]
+    const engrenagem = document.getElementsByClassName("engrenagem")[0]
+    const title = document.getElementsByClassName("title")[0]
+    const linha = document.getElementsByClassName("linhaheader")[0]
     // toggle
     for(var i =0; i<estado.length;i++){
         estado[i].classList.toggle("darkEstado");
@@ -63,6 +68,22 @@ function dark(){
     modal.classList.toggle("darkModalContent")
     textoModal.classList.toggle("darkTextoModal")
     input.classList.toggle("darkInput")
-    background.classList.toggle("darkBackground");
+   
+    if(darkmode==true){
+        background.style.backgroundColor = "#232323"
+        plus.src = 'assets/plusDark.png'
+        logo.src = 'assets/Whitelogo 1.png'
+        engrenagem.src = 'assets/Engrenagem Branca.png'
+        title.style.color = "white";
+        linha.style.backgroundColor = "white"
+    }
+    else{
+        background.style.backgroundColor = "white"
+        plus.src = 'assets/plusDefault.png'
+        logo.src = 'assets/Bluelogo 1.png'
+        engrenagem.src = 'assets/Engrenagem.png'
+        title.style.color = "#0C58D3";
+        linha.style.backgroundColor = "#0C58D3"
+    }
     
 }

@@ -20,9 +20,6 @@
     object-fit: contain;
     background-image: none;
 }
-.darkBackground{
-    background-color: #232323;
-}
 .topside{
     margin-top: 2.5%;
     margin-left: 10%;
@@ -372,7 +369,8 @@ p{
     transform: translateX(26px);
 }
 /* cookieask */
-.cookieAsk{
+.cookieAsk{ 
+    visibility: hidden;
     display: flex;
     padding-top: 4vh;
     padding-left: 6vh;
@@ -423,6 +421,9 @@ p{
 }
 ::placeholder{
     color: #B9B9B9;
+}
+textarea:focus, input:focus {
+    color: #b9b9b9;
 }
 @media (max-width: 600px){
     .bottomside{
